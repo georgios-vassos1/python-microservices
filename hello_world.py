@@ -1,2 +1,1 @@
-print('Hello World')
-print('dev style')
+print('H  lo W')
