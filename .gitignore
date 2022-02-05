@@ -1,6 +1,8 @@
+.ropeproject/
 *.ipynb
 
 __pycache__
 marketplace/__pycache__
 marketplace/__pycache__
 recommendations/__pycache__
+recommendations/run.sh
