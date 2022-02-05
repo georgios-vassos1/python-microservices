@@ -1,0 +1,32 @@
+{
+  "mapping": [ "LITERATURE", "PHILOSOPHY", "SCIENCE" ],
+  "categories": {
+    "LITERATURE": [
+      "The first man",
+      "The stranger",
+      "The fall",
+      "The myth of Sisyphus",
+      "Nausea",
+      "Thus Spoke Zarathustra: A Book for All and None",
+      "Anna Karenina",
+      "War And Peace",
+      "Goethe's Faust",
+      "Doctor Zhivago"
+    ],
+    "PHILOSOPHY": [
+      "Critique of pure reason",
+      "A treatise of human nature",
+      "An essay concerning human understanding",
+      "Discourse on metaphysics",
+      "Meditations on first philosophy"
+    ],
+    "SCIENCE": [
+      "Targeted learning for observational and experimental data",
+      "Targeted learning in data science",
+      "Efficient and adaptive estimation for semiparametric models",
+      "Convergence of stochastic processes",
+      "Estimation of dependences based on empirical data",
+      "Probability in Banach spaces: Isometry and processes"
+    ]
+  }
+}
