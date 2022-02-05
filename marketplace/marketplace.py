@@ -16,6 +16,12 @@ recommendations_client = RecommendationsStub(recommendations_channel)
 
 @app.route("/")
 def render_homepage():
+    return render_template(
+        "homepage.html"
+    )
+
+@app.route("/philosophy")
+def render_philosophy():
     recommendations_request = RecommendationRequest(
         user_id=1, category=BookCategory.PHILOSOPHY, max_results=3
     )
@@ -23,7 +29,33 @@ def render_homepage():
         recommendations_request
     )
     return render_template(
-        "homepage.html",
+        "philosophy.html",
+        recommendations=recommendations_response.recommendations,
+    )
+
+@app.route("/literature")
+def render_literature():
+    recommendations_request = RecommendationRequest(
+        user_id=1, category=BookCategory.LITERATURE, max_results=3
+    )
+    recommendations_response = recommendations_client.Recommend(
+        recommendations_request
+    )
+    return render_template(
+        "literature.html",
+        recommendations=recommendations_response.recommendations,
+    )
+
+@app.route("/science")
+def render_science():
+    recommendations_request = RecommendationRequest(
+        user_id=1, category=BookCategory.SCIENCE, max_results=3
+    )
+    recommendations_response = recommendations_client.Recommend(
+        recommendations_request
+    )
+    return render_template(
+        "science.html",
         recommendations=recommendations_response.recommendations,
     )
 
