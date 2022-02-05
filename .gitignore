@@ -4,5 +4,6 @@
 __pycache__
 marketplace/__pycache__
 marketplace/__pycache__
+marketplace/run.sh
 recommendations/__pycache__
 recommendations/run.sh
