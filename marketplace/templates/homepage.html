@@ -5,10 +5,14 @@
     <title>Online Books For You</title>
 </head>
 <body>
-    <h1>Philosophy books you may like</h1>
-    <ul>
-    {% for book in recommendations %}
-        <li>{{ book.title }}</li>
-    {% endfor %}
-    </ul>
+    <h1>Click on the category of your choice</h1>
+    <a href="/philosophy">
+        <button>Philosopy</button>
+    </a>
+    <a href="/literature">
+        <button>Literature</button>
+    </a>
+    <a href="/science">
+        <button>Science</button>
+    </a>
 </body>
