@@ -19,7 +19,7 @@ services:
             context: .
             dockerfile: recommendations/Dockerfile
         environment:
-            DB_PATH: "db.json"
+            DB_PATH: "database/db.json"
         image: recommendations
         networks:
             - microservices
