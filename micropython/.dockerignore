@@ -1,5 +1,6 @@
 .ropeproject/
 *.ipynb
+.ipynb_checkpoints/
 
 __pycache__
 marketplace/__pycache__
