@@ -1,10 +1,11 @@
 .ropeproject/
 *.ipynb
-
 __pycache__
+
 marketplace/__pycache__
 marketplace/__pycache__
 marketplace/run.sh
 marketplace/flask.sh
+
 recommendations/__pycache__
 recommendations/run.sh
