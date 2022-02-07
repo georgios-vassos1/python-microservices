@@ -1,5 +1,5 @@
 from concurrent import futures
-import logging
+import logging, os
 import random
 
 import grpc
@@ -32,7 +32,7 @@ def convert_db(db_path: str) -> dict:
     return books_dict
 
 class RecommendationService(recommendations_pb2_grpc.RecommendationsServicer):
-    books_by_category = convert_db("db.json")
+    books_by_category = convert_db(os.getenv("DB_PATH"))
 
     @staticmethod
     def random_recommendation(books, n):

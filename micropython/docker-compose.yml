@@ -6,7 +6,7 @@ services:
             context: .
             dockerfile: marketplace/Dockerfile
         environment:
-            RECOMMENDATIONS_HOST: recommendations
+            RECOMMENDATIONS_HOST: "localhost"
         image: marketplace
         networks:
             - microservices
@@ -17,6 +17,8 @@ services:
         build:
             context: .
             dockerfile: recommendations/Dockerfile
+        environment:
+            DB_PATH: "db.json"
         image: recommendations
         networks:
             - microservices
