@@ -4,6 +4,7 @@ MAINTAINER George Vassos "georgios.vassos1@maersk.com"
 WORKDIR /service/recommendations
 COPY protobufs/ /service/protobufs/
 COPY recommendations/ /service/recommendations/
+COPY database/ /service/database/
 
 ENV DEBIAN_FRONTEND noninteractive
 
