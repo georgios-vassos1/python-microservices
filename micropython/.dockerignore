@@ -1,14 +1,15 @@
 .ropeproject/
-*.ipynb
 .ipynb_checkpoints/
-
+*.ipynb
 __pycache__
+
 marketplace/__pycache__
+marketplace/run.sh
+marketplace/flask.sh
 marketplace/recommendations_pb2.py
 marketplace/recommendations_pb2_grpc.py
 
 recommendations/__pycache__
+recommendations/run.sh
 recommendations/recommendations_pb2.py
 recommendations/recommendations_pb2_grpc.py
-
-
